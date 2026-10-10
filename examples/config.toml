@@ -1,0 +1,6 @@
+[fortigate]
+gateway = "vpn.example.com"
+saml_port = 1001
+
+[strongswan]
+connection = "fortigate"

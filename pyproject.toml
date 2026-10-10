@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fortigate-saml-vpn"
+version = "0.1.0"
+description = "SAML authentication helper for FortiGate IKEv2 VPNs using strongSwan"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "Frederic MARTIN (quincampoix)" }
+]
+keywords = ["fortigate", "fortinet", "strongswan", "ikev2", "saml", "vpn"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",    
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: System :: Networking",
+]
+
+[project.scripts]
+fortigate-saml-vpn = "fortigate_saml_vpn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+dependencies = [
+    "vici>=6.0.3,<7",
+]
