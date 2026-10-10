@@ -65,7 +65,7 @@ Other distributions may require adjustments, particularly for strongSwan service
 Clone the repository:
 
 ```bash
-git clone <https://github.com/quincampoix/fortigate-saml-vpn.git>
+git clone https://github.com/quincampoix/fortigate-saml-vpn.git
 cd fortigate-saml-vpn
 ```
 
