@@ -69,13 +69,36 @@ git clone https://github.com/quincampoix/fortigate-saml-vpn.git
 cd fortigate-saml-vpn
 ```
 
-Create a Python virtual environment and install the application:
+
+Create a Python virtual environment:
 
 ```bash
 python3 -m venv .venv
+```
+
+Activate the virtual environment using the command corresponding to your shell:
+
+**Bash / Zsh (most Linux distributions):**
+
+```bash
 source .venv/bin/activate
+```
+
+**Fish (e.g., CachyOS with fish configured as the default shell):**
+
+```fish
+source .venv/bin/activate.fish
+```
+
+Then install the application:
+
+```bash
 python -m pip install -e .
 ```
+
+**Note:** The virtual environment only needs to be activated during installation or when working on the project. If you configure the optional symbolic link described below, you can run `fortigate-saml-vpn` from any directory without activating the environment.
+
+
 
 Create your local application configuration:
 
