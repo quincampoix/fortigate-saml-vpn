@@ -16,11 +16,15 @@ keywords = ["fortigate", "fortinet", "strongswan", "ikev2", "saml", "vpn"]
 
 classifiers = [
     "Development Status :: 3 - Alpha",
-    "Environment :: Console",    
+    "Environment :: Console",
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
     "Topic :: System :: Networking",
+]
+
+dependencies = [
+    "vici>=6.0.3,<7",
 ]
 
 [project.scripts]
@@ -28,7 +32,3 @@ fortigate-saml-vpn = "fortigate_saml_vpn.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-dependencies = [
-    "vici>=6.0.3,<7",
-]
