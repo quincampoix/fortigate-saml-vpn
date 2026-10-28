@@ -199,6 +199,13 @@ The application will continue using its dedicated Python virtual environment and
 
 **Note:** The symbolic link depends on the repository remaining at its original location. If you move or delete the repository, you will need to recreate the virtual environment and symbolic link.
 
+### Optional system tray integration
+
+An experimental system tray application is available.
+It displays the VPN connection status and provides Connect/Disconnect actions.
+
+See [System Tray Integration](tray/README.md) for installation instructions.
+
 ## The story behind this project
 
 Beyond simply getting a VPN connection working, this project became a really enjoyable technical investigation.
